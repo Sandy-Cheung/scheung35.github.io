@@ -154,6 +154,8 @@ input:focus, textarea:focus {
     width: 200px;
 }
 
+/*responsive*/
+
 @media only screen and (max-width: 900px) {
     #about_me, #basic_info {
         display: block;
