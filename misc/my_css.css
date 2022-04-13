@@ -181,14 +181,14 @@ input:focus, textarea:focus {
 @media only screen and (max-width: 590px) {
     #about_me, #basic_info {
         display: block;
-        width: 300px;
+        width: 350px;
         margin: 0 auto;
     }
     .row {
         width: 250px;
     }
     section {
-        width: 400px;
+        width: 350px;
     }
     body, form {
         font-size: 0.75em;
