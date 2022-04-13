@@ -164,6 +164,9 @@ input:focus, textarea:focus {
     .row {
         width: 500px;
     }
+    section {
+        width: 600px;
+    }
     body, form {
         font-size: 0.8em;
     }
@@ -175,7 +178,7 @@ input:focus, textarea:focus {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 580px) {
     #about_me, #basic_info {
         display: block;
         width: 250px;
@@ -184,6 +187,9 @@ input:focus, textarea:focus {
     }
     .row {
         width: 250px;
+    }
+    section {
+        width: 450px;
     }
     body, form {
         font-size: 0.75em;
