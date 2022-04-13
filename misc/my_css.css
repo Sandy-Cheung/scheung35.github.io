@@ -178,20 +178,20 @@ input:focus, textarea:focus {
 @media only screen and (max-width: 550px) {
     #about_me, #basic_info {
         display: block;
-        width: 300px;
+        width: 250px;
         margin: 0 auto;
         float: none;
     }
     .row {
-        width: 300px;
+        width: 250px;
     }
     body, form {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
     #contact, form #contact_form {
-        width: 300px;
+        width: 250px;
     }
     fieldset {
-        width: 250px;
+        width: 200px;
     }
 }
