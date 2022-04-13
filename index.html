@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="misc/my_css.css">
+    <link rel="stylesheet" href="misc/palettelist.css">
+    <script src="misc/my_js.js"></script>
+    <title>WEB222 Final Project</title>
+</head>
+<body>
+    <section class="first-color" id="me">
+        <img src="misc/photo.jpg" alt="picture of Sandy Cheung" id="portrait"><br>
+        <h2 class="center">SANDY CHEUNG</h2><br>
+        <p class="center">Game Developer</p><br>
+        <div class="container">
+            <button class="btn" id="resume" onclick="download()">Resume</button>
+            <button class="btn" id="contact_me" onclick="go_to('contact')">Contact Me</button>
+        </div>
+    </section>
+
+    <section class="second-color">
+        <article id="about_me">
+            <h3>About Me and Academic Honesty</h3>
+            <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic
+                Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+            </p>
+            <p><b>Date:</b> April 12, 2022</p>
+        </article>
+        <article id="basic_info">
+            <h3>Basic Information</h3>
+            <table>
+                <tr>
+                    <td><b>AGE:</b></td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td><b>EMAIL:</b></td>
+                    <td>scheung35@myseneca.ca</td>
+                </tr>
+                <tr>
+                    <td><b>LANGUAGE:</b></td>
+                    <td>English, Chinese</td>
+                </tr>
+                <tr>
+                    <td><b>CLASS SECTION:</b></td>
+                    <td>NHH</td>
+                </tr>
+                <tr>
+                    <td><b>STUDENT ID:</b></td>
+                    <td>159301209</td>
+                </tr>
+                <tr>
+                    <td><b>INSTRUCTOR:</b></td>
+                    <td>Muath Alzghool</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <section class="third-color">
+        <h2 class="center">Education</h2>
+        <div class="row">
+            <div class="column1">
+                <p>2021 - 2023</p>
+                <p>(expected)</p>
+                <h2>College Diploma</h2>
+            </div>
+            <div class="column2">
+                <h2>Computer Programming</h2>
+                <h4>SENECA COLLEGE</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <p>2016 - 2020</p>
+                <h2>High School Diploma</h2>
+            </div>
+            <div class="column2">
+                <h2>High School Diploma</h2>
+                <h4>RIVERDALE COLLEGIATE INSTITUTE</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth-color">
+        <div id="contact">
+            <h2 class="center">Contact Me</h2><br>
+            <form method="post" action="https://httpbin.org/post" id="contact_form">
+                <fieldset>
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter Name" required>
+                
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age" min="1" max="100" required>
+                
+                    <label for="mail">Email: </label>
+                    <input type="email" name="mail" id="mail" required>
+                
+                    <label for="address">Address: </label>
+                    <input type="text" name="address" id="address" required>
+               
+                    <label for="city">City: </label>
+                    <input list="cities" name="city" id="city" required>
+                    <datalist id="cities">
+                        <option value="Toronto" selected></option>
+                        <option value="Vancouver"></option>
+                        <option value="Montreal"></option>
+                        <option value="Niagara Falls"></option>
+                        <option value="Victoria"></option>
+                        <option value="Halifax"></option>
+                        <option value="Quebec City"></option>
+                        <option value="Ottawa"></option>
+                </datalist>
+                
+                <label for="postal">Postal Code: </label>
+                <input type="text" pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$" name="postal" id="postal" title="Example: A1A 1A1 (the space is optional)" required>
+               
+                <div id="radio_buttons">
+                    <span>Reason for contacting:</span><br>
+                    <input type="radio" name="about_options" id="question" value="question" onclick="hide_hiring()" checked="checked" required>
+                    <label for="question">Question</label><br>
+                    <input type="radio" name="about_options" id="comment" value="comment" onclick="hide_hiring()">
+                    <label for="comment">Comment</label><br>         
+                    <input type="radio" name="about_options" id="hiring" value="hiring" onclick="show_hiring()">
+                    <label for="hiring">Hiring</label><br>
+                    <div id="dynamic">
+                        <label id="hourly_label">Hourly Rate in Dollars:</label>
+                        <input type="hidden" name="about_options" id="hourly">
+                    </div>
+                </div>
+                
+                <label for="textfield" id="left">Type additional information here: </label>
+                <textarea name="textfield" id="textfield" rows="5" cols="50" placeholder="Type here" required></textarea>
+            </fieldset>
+     
+            <div class="container">
+                <button class="btn" type="submit" value="Submit">Submit</button>
+                <button class="btn" type="reset">Reset</button>
+            </div>
+        </form>
+        </div>
+    </section>
+</body>
+</html>
