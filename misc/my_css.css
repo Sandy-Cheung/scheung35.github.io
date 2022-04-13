@@ -176,7 +176,7 @@ input:focus, textarea:focus {
     fieldset {
         width: 450px;
     }
-    #dynamic input {
+    #dynamic input, #dynamic label {
         width: 150px;
     }
 }
@@ -202,7 +202,7 @@ input:focus, textarea:focus {
     fieldset {
         width: 200px;
     }
-    #dynamic input {
+    #dynamic input, #dynamic label {
         width: 100px;
     }
 }
