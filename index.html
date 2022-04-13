@@ -112,34 +112,34 @@
                         <option value="Halifax"></option>
                         <option value="Quebec City"></option>
                         <option value="Ottawa"></option>
-                </datalist>
+                    </datalist>
                 
-                <label for="postal">Postal Code: </label>
-                <input type="text" pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$" name="postal" id="postal" title="Example: A1A 1A1 (the space is optional)" required>
+                    <label for="postal">Postal Code: </label>
+                    <input type="text" pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$" name="postal" id="postal" title="Example: A1A 1A1 (the space is optional)" required>
                
-                <div id="radio_buttons">
-                    <span>Reason for contacting:</span><br>
-                    <input type="radio" name="about_options" id="question" value="question" onclick="hide_hiring()" checked="checked" required>
-                    <label for="question">Question</label><br>
-                    <input type="radio" name="about_options" id="comment" value="comment" onclick="hide_hiring()">
-                    <label for="comment">Comment</label><br>         
-                    <input type="radio" name="about_options" id="hiring" value="hiring" onclick="show_hiring()">
-                    <label for="hiring">Hiring</label><br>
-                    <div id="dynamic">
-                        <label id="hourly_label">Hourly Rate in Dollars:</label>
-                        <input type="hidden" name="about_options" id="hourly">
+                    <div id="radio_buttons">
+                        <span>Reason for contacting:</span><br>
+                        <input type="radio" name="about_options" id="question" value="question" onclick="hide_hiring()" checked="checked" required>
+                        <label for="question">Question</label><br>
+                        <input type="radio" name="about_options" id="comment" value="comment" onclick="hide_hiring()">
+                        <label for="comment">Comment</label><br>         
+                        <input type="radio" name="about_options" id="hiring" value="hiring" onclick="show_hiring()">
+                        <label for="hiring">Hiring</label><br>
+                        <div id="dynamic">
+                            <label id="hourly_label">Hourly Rate in Dollars:</label>
+                            <input type="hidden" name="about_options" id="hourly">
+                        </div>
                     </div>
-                </div>
                 
-                <label for="textfield" id="left">Type additional information here: </label>
-                <textarea name="textfield" id="textfield" rows="5" cols="50" placeholder="Type here" required></textarea>
-            </fieldset>
+                    <label for="textfield" id="left">Type additional information here: </label>
+                    <textarea name="textfield" id="textfield" rows="5" cols="50" placeholder="Type here" required></textarea>
+                </fieldset>
      
-            <div class="container">
-                <button class="btn" type="submit" value="Submit">Submit</button>
-                <button class="btn" type="reset">Reset</button>
-            </div>
-        </form>
+                <div class="container">
+                    <button class="btn" type="submit" value="Submit">Submit</button>
+                    <button class="btn" type="reset">Reset</button>
+                </div>
+            </form>
         </div>
     </section>
 </body>
