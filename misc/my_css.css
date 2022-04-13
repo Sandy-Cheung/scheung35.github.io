@@ -153,3 +153,20 @@ input:focus, textarea:focus {
 #dynamic input {
     width: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+    #about_me, #basic_info {
+        display: block;
+        width: 250px;
+    }
+    #basic_info {
+        float: left;
+        margin: 0 auto;
+    }
+    .row {
+        width: 500px;
+    }
+    body {
+        font-size: 0.8em;
+    }
+}
